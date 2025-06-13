@@ -1,0 +1,139 @@
+Rate Plan Name,Rate Plan Code,Before/After Baseline,Season Name,Start Date,End Date,Start Time,End Time,Cost in cents,Source
+Tiered Rate Plan,E-1,Above Baseline,,,,,,15.569,pge
+Tiered Rate Plan,E-1,Below Baseline,,,,,,15.569,pge
+Tiered Rate Plan,E-1,Above Baseline,,,,,,13.565,greensource
+Tiered Rate Plan,E-1,Below Baseline,,,,,,13.565,greensource
+Tiered Rate Plan,E-1,Above Baseline,,,,,,14.565,totalgreen
+Tiered Rate Plan,E-1,Below Baseline,,,,,,14.565,totalgreen
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,14.911,pge
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,19.421,pge
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,29.332,pge
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,19.421,pge
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,9.787,pge
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,11.122,pge
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,13.119,pge
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,11.122,pge
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,12.54,greensource
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,16.583,greensource
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,25.467,greensource
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,16.583,greensource
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,7.946,greensource
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,9.142,greensource
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,10.933,greensource
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,9.142,greensource
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,13.54,totalgreen
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,17.583,totalgreen
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,26.467,totalgreen
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,17.583,totalgreen
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,8.946,totalgreen
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,10.142,totalgreen
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,11.933,totalgreen
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,10.142,totalgreen
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,13.17,pge
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,13.17,pge
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,23.47,pge
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,23.47,pge
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,13.17,pge
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,13.17,pge
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,13.73,pge
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,13.73,pge
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,16.398,pge
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,16.398,pge
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,13.73,pge
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,13.73,pge
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,12.219,greensource
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,12.219,greensource
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,20.132,greensource
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,20.132,greensource
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,12.219,greensource
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,12.219,greensource
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,11.958,greensource
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,11.958,greensource
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,14.5,greensource
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,14.5,greensource
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,11.958,greensource
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,11.958,greensource
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,13.219,totalgreen
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,13.219,totalgreen
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,21.132,totalgreen
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,21.132,totalgreen
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,13.219,totalgreen
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,13.219,totalgreen
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,12.958,totalgreen
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,12.958,totalgreen
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,15.5,totalgreen
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,15.5,totalgreen
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,12.958,totalgreen
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,12.958,totalgreen
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,12:00 AM,5:00 PM,12.87,pge
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,5:00 PM,8:00 PM,23.366,pge
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,8:00 PM,12:00 AM,12.87,pge
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,12:00 AM,5:00 PM,15.771,pge
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,5:00 PM,8:00 PM,19.279,pge
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,8:00 PM,12:00 AM,15.771,pge
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,12:00 AM,5:00 PM,11.26,greensource
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,5:00 PM,8:00 PM,20.56,greensource
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,8:00 PM,12:00 AM,11.26,greensource
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,12:00 AM,5:00 PM,13.831,greensource
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,5:00 PM,8:00 PM,16.939,greensource
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,8:00 PM,12:00 AM,13.831,greensource
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,12:00 AM,5:00 PM,12.26,totalgreen
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,5:00 PM,8:00 PM,21.56,totalgreen
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,8:00 PM,12:00 AM,12.26,totalgreen
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,12:00 AM,5:00 PM,14.831,totalgreen
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,5:00 PM,8:00 PM,17.939,totalgreen
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,8:00 PM,12:00 AM,14.831,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,13.073,pge
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,17.187,pge
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,21.658,pge
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,17.187,pge
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,12.374,pge
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,14.722,pge
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,15.971,pge
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,14.722,pge
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,11.566,greensource
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,15.434,greensource
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,19.494,greensource
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,15.434,greensource
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,10.492,greensource
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,13.036,greensource
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,14.101,greensource
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,13.036,greensource
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,12.566,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,16.434,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,20.494,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,16.434,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,11.492,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,14.036,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,15.101,totalgreen
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,14.036,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,12:00 AM,7:00 AM,14.218,pge
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,7:00 AM,2:00 PM,18.856,pge
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,2:00 PM,9:00 PM,33.203,pge
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,9:00 PM,11:00 PM,18.856,pge
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,11:00 PM,12:00 AM,14.218,pge
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,12:00 AM,7:00 AM,11.271,pge
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,7:00 AM,2:00 PM,11.271,pge
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,2:00 PM,9:00 PM,13.756,pge
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,9:00 PM,11:00 PM,11.271,pge
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,11:00 PM,12:00 AM,11.271,pge
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,12:00 AM,7:00 AM,11.172,greensource
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,7:00 AM,2:00 PM,14.81,greensource
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,2:00 PM,9:00 PM,27.606,greensource
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,9:00 PM,11:00 PM,14.81,greensource
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,11:00 PM,12:00 AM,11.172,greensource
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,12:00 AM,7:00 AM,8.557,greensource
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,7:00 AM,2:00 PM,8.057,greensource
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,2:00 PM,9:00 PM,10.76,greensource
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,9:00 PM,11:00 PM,8.057,greensource
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,11:00 PM,12:00 AM,8.557,greensource
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,12:00 AM,7:00 AM,12.172,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,7:00 AM,2:00 PM,15.81,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,2:00 PM,9:00 PM,28.606,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,9:00 PM,11:00 PM,15.81,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,11:00 PM,12:00 AM,12.172,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,12:00 AM,7:00 AM,9.557,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,7:00 AM,2:00 PM,9.057,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,2:00 PM,9:00 PM,11.76,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,9:00 PM,11:00 PM,9.057,totalgreen
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,11:00 PM,12:00 AM,9.557,totalgreen 
