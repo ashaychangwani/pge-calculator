@@ -1,0 +1,47 @@
+Rate Plan Name,Rate Plan Code,Before/After Baseline,Season Name,Start Date,End Date,Start Time,End Time,Cost in cents
+Tiered Rate Plan,E-1,Above Baseline,,,,,,51
+Tiered Rate Plan,E-1,Below Baseline,,,,,,41
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,50
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,12:00 AM,4:00 PM,40
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,63
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,52
+Time-of-Use,E-TOU-C,Above Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,50
+Time-of-Use,E-TOU-C,Below Baseline,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,40
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,47
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,12:00 AM,4:00 PM,37
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,50
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,40
+Time-of-Use,E-TOU-C,Above Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,47
+Time-of-Use,E-TOU-C,Below Baseline,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,37
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,12:00 AM,5:00 PM,44
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,5:00 PM,8:00 PM,57
+Time-of-Use,E-TOU-D,,Summer Season,June 1,Sept 30,8:00 PM,12:00 AM,44
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,12:00 AM,5:00 PM,44
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,5:00 PM,8:00 PM,48
+Time-of-Use,E-TOU-D,,Winter Season,Oct 1,May 31,8:00 PM,12:00 AM,44
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,40
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,45
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,61
+Electric Home Rate Plan,E-ELEC,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,45
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,35
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,36
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,38
+Electric Home Rate Plan,E-ELEC,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,36
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,12:00 AM,3:00 PM,31
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,3:00 PM,4:00 PM,51
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,4:00 PM,9:00 PM,62
+Electric Vehicle (Home Charging),EV2-A,,Summer Season,June 1,Sept 30,9:00 PM,12:00 AM,51
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,12:00 AM,3:00 PM,31
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,3:00 PM,4:00 PM,48
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,4:00 PM,9:00 PM,50
+Electric Vehicle (Home Charging),EV2-A,,Winter Season,Oct 1,May 31,9:00 PM,12:00 AM,48
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,12:00 AM,7:00 AM,37
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,7:00 AM,2:00 PM,48
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,2:00 PM,9:00 PM,73
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,9:00 PM,11:00 PM,48
+Electric Vehicle Rate Plan,EV-B,,Summer Season,June 1,Sept 30,11:00 PM,12:00 AM,37
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,12:00 AM,7:00 AM,34
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,7:00 AM,2:00 PM,41
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,2:00 PM,9:00 PM,54
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,9:00 PM,11:00 PM,41
+Electric Vehicle Rate Plan,EV-B,,Winter Season,Oct 1,May 31,11:00 PM,12:00 AM,34 

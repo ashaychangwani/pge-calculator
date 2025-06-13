@@ -1,0 +1,16 @@
+TYPE,DATE,START TIME,END TIME,USAGE (kWh),COST ($)
+Electric usage,03/01/2024,12:00 AM,1:00 AM,0.35,$0.19
+Electric usage,03/01/2024,1:00 AM,2:00 AM,0.29,$0.15
+Electric usage,03/01/2024,2:00 AM,3:00 AM,0.28,$0.15
+Electric usage,03/01/2024,3:00 AM,4:00 AM,0.27,$0.14
+Electric usage,03/01/2024,4:00 AM,5:00 AM,0.31,$0.16
+Electric usage,03/01/2024,5:00 AM,6:00 AM,0.45,$0.24
+Electric usage,03/01/2024,6:00 AM,7:00 AM,0.78,$0.41
+Electric usage,03/01/2024,7:00 AM,8:00 AM,1.25,$0.66
+Electric usage,03/01/2024,8:00 AM,9:00 AM,0.89,$0.47
+Electric usage,03/01/2024,9:00 AM,10:00 AM,0.67,$0.35
+Electric usage,03/01/2024,10:00 AM,11:00 AM,0.58,$0.31
+Electric usage,03/01/2024,11:00 AM,12:00 PM,0.62,$0.33
+Electric usage,03/01/2024,12:00 PM,1:00 PM,0.71,$0.37
+Electric usage,03/01/2024,1:00 PM,2:00 PM,0.68,$0.36
+Electric usage,03/01/2024,2:00 PM,3:00 PM,0.64,$0.34 

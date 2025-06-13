@@ -1,0 +1,9 @@
+# PG&E Rate Calculator Dependencies
+# Generated from pyproject.toml for pip users
+# For development, use Poetry: poetry install
+
+streamlit>=1.45.1
+pandas>=2.3.0
+plotly>=6.1.2
+numpy>=1.24.0
+watchdog>=6.0.0 
