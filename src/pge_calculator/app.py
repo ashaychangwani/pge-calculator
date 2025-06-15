@@ -108,6 +108,39 @@ PROVIDERS = {
     },
 }
 
+# NEW: Support-the-developer link --------------------------------------------
+BUY_ME_A_COFFEE_URL = "https://www.buymeacoffee.com/ashayc"
+
+
+def _render_buy_me_a_coffee():
+    """Render a tasteful 'Buy me a coffee' link at the very top of the sidebar."""
+    bmc_html = f"""
+    <style>
+    .bmc-sidebar-link {{
+        display: block;
+        background: #FFDD00;
+        color: #000 !important;
+        border-radius: 24px;
+        padding: 0.45rem 1rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 0.75rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        transition: transform 0.1s ease-in-out;
+        text-decoration: none;
+        font-size: 0.95rem;
+    }}
+    .bmc-sidebar-link:hover {{
+        transform: scale(1.03);
+        text-decoration: none;
+    }}
+    </style>
+    <a class="bmc-sidebar-link" href="{BUY_ME_A_COFFEE_URL}" target="_blank" rel="noopener noreferrer">☕️ Buy me a coffee</a>
+    """
+    # Place it before any other sidebar elements so it appears at the very top
+    st.sidebar.markdown(bmc_html, unsafe_allow_html=True)
+
+
 def plan_label(plan_code: str) -> str:
     """Return a user-friendly label of the form 'Plan Name (CODE)'."""
     return f"{PLAN_NAMES.get(plan_code, plan_code)} ({plan_code})"
@@ -1712,6 +1745,7 @@ def get_view_settings():
 def main():
     """Main application function."""
     configure_page()
+    _render_buy_me_a_coffee()  # NEW: support button
     display_header()
     
     # Initialize calculator
