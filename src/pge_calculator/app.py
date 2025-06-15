@@ -103,7 +103,7 @@ PROVIDERS = {
         "description": "Generation service from San José Clean Energy with at least 60% renewable content."
     },
     "totalgreen": {
-        "label": "TotalGreen (100% renewable) (SJCE)",
+        "label": "TotalGreen (100% renewable)",
         "description": "SJCE's 100% renewable generation service, sourced entirely from renewable resources."
     },
 }
@@ -335,7 +335,8 @@ def display_sidebar_stats(usage_df: Optional[pd.DataFrame] = None, results: Opti
                 color = "#e74c3c"  # Third - red
                 icon = "🥉"
             
-            label = plan_label_provider(plan, data.get('provider', 'pge'))
+            # Use shorter plan label to avoid overly long sidebar entries
+            label = plan_label(plan)
             monthly_cost = calculate_monthly_cost(data['total_cost'], usage_df)
             st.sidebar.markdown(f"""
             <div style="background: {color}; color: white; padding: 1rem; border-radius: 8px; margin: 0.5rem 0;">
@@ -428,10 +429,12 @@ def display_file_uploader():
         st.markdown("""
         1. Visit [PG&E My Account](https://myaccount.pge.com/)
         2. Log in to your account
-        3. Navigate to "Usage & Consumption"
-        4. Select "Download Data" or "Export"
-        5. Choose CSV format and download
-        6. Upload the file below
+        3. Navigate to [Check Your Energy Usage](https://myaccount.pge.com/myaccount/s/usageandconsumption-homepage)
+        4. Select "Green Button / Download My Data"
+        5. Select Time Period: "Export Usage for a range of days" and select the longest date range possible
+        5. Choose CSV format 
+        6. Click Export 
+        7. Upload the file below. 
         """)
     
     uploaded_file = st.file_uploader(
@@ -669,7 +672,7 @@ def create_enhanced_rate_comparison_charts(results: dict, usage_df: pd.DataFrame
     for plan, data in results.items():
         monthly_cost = calculate_monthly_cost(data['total_cost'], usage_df)
         comparison_data.append({
-            'Plan': plan_label_provider(plan, data.get('provider', 'pge')),
+            'Plan': plan_label(plan),
             'Monthly Cost': monthly_cost,
             'Cost per kWh': data['total_cost'] / data['total_kwh'] if data['total_kwh'] > 0 else 0,
             'Total kWh': data['total_kwh']
@@ -1362,7 +1365,7 @@ def display_monthly_analysis(usage_df: pd.DataFrame, calculator: PGERateCalculat
     # Build dataframe for cost analysis
     costs_df = pd.DataFrame([
         {
-            'Plan': plan_label_provider(code, data.get('provider', 'pge')),
+            'Plan': plan_label(code),
             'Cost': data['total_cost'],
             'kWh': data['total_kwh']
         }
@@ -1579,6 +1582,71 @@ def display_monthly_analysis(usage_df: pd.DataFrame, calculator: PGERateCalculat
     st.plotly_chart(fig_cumulative, use_container_width=True)
 
 
+def display_provider_comparison(provider_results_all: dict, usage_df: pd.DataFrame):
+    """Display a cost comparison across generation providers for every plan.
+
+    This chart is shown only when the user explicitly opts-in for provider analysis
+    to avoid cluttering the main UI with long labels.
+    """
+
+    if not provider_results_all:
+        st.warning("No provider data available for comparison.")
+        return
+
+    st.markdown("## 🌱 Generation Provider Cost Comparison")
+    st.markdown(
+        "Compare how your monthly cost changes depending on the "
+        "electricity generation provider (and its renewable content)."
+    )
+
+    rows = []
+    for prov_key, plans in provider_results_all.items():
+        prov_label = PROVIDERS.get(prov_key, {}).get("label", prov_key)
+        for plan_code, res in plans.items():
+            monthly_cost = calculate_monthly_cost(res["total_cost"], usage_df)
+            rows.append(
+                {
+                    "Plan": plan_label(plan_code),
+                    "Provider": prov_label,
+                    "Monthly Cost": monthly_cost,
+                    "Cost per kWh": res["total_cost"] / res["total_kwh"] if res["total_kwh"] else 0,
+                }
+            )
+
+    df = pd.DataFrame(rows)
+
+    # Bar chart grouped by plan with provider colours
+    fig = px.bar(
+        df,
+        x="Plan",
+        y="Monthly Cost",
+        color="Provider",
+        barmode="group",
+        text=df["Monthly Cost"].apply(lambda x: f"${x:.2f}"),
+    )
+    fig.update_layout(
+        title={
+            "text": "Monthly Cost by Plan and Generation Provider",
+            "x": 0.5,
+            "xanchor": "center",
+        },
+        xaxis_title="Rate Plan",
+        yaxis_title="Monthly Cost ($)",
+        height=600,
+        plot_bgcolor="rgba(0,0,0,0)",
+        paper_bgcolor="rgba(0,0,0,0)",
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    # Show underlying numbers so users can explore
+    st.markdown("### 📋 Detailed Provider Comparison Data")
+    display_df = df.copy()
+    display_df["Monthly Cost"] = display_df["Monthly Cost"].apply(lambda x: f"${x:.2f}")
+    display_df["Cost per kWh"] = display_df["Cost per kWh"].apply(lambda x: f"${x:.4f}")
+    st.dataframe(display_df, use_container_width=True, hide_index=True)
+
+
 def display_provider_selection():
     """Sidebar section for selecting generation provider and comparison options."""
     st.sidebar.markdown("## ⚡️ Generation Provider")
@@ -1603,6 +1671,44 @@ def display_provider_selection():
     return provider_choice
 
 
+# NEW FUNCTION: View mode and advanced filters ---------------------------------
+
+def get_view_settings():
+    """Return view mode and visibility flags for various sections.
+
+    Adds a sidebar control allowing users to choose between a simplified *Basic* view
+    (minimal information) and an *Advanced* view where they can individually toggle
+    which analytic sections to display.
+
+    Returns (view_mode, show_usage, show_rate, show_monthly, show_provider_comp)
+    """
+    st.sidebar.markdown("## 🖥️ View Settings")
+
+    view_mode = st.sidebar.radio(
+        "Select analysis view:",
+        options=["Basic", "Advanced"],
+        index=0,
+        help="Choose *Basic* for a streamlined interface or *Advanced* for full analytical control",
+    )
+
+    # Defaults for Basic view
+    show_usage = True
+    show_rate = True
+    show_monthly = False
+    show_provider_comp = False
+
+    if view_mode == "Advanced":
+        st.sidebar.markdown("### 📑 Show Sections")
+        show_usage = st.sidebar.checkbox("Usage Analysis", value=True)
+        show_rate = st.sidebar.checkbox("Rate Comparison", value=True)
+        show_monthly = st.sidebar.checkbox("Monthly Analysis", value=True)
+        show_provider_comp = st.sidebar.checkbox(
+            "Provider Comparison (sustainability)", value=False
+        )
+
+    return view_mode, show_usage, show_rate, show_monthly, show_provider_comp
+
+
 def main():
     """Main application function."""
     configure_page()
@@ -1623,6 +1729,9 @@ def main():
     if hasattr(st, 'session_state'):
         st.session_state['selected_provider'] = provider_choice
     
+    # NEW: Get view settings (basic vs advanced) --------------------------------
+    view_mode, show_usage, show_rate, show_monthly, show_provider_comp = get_view_settings()
+
     st.markdown("---")
     
     # File upload
@@ -1642,16 +1751,18 @@ def main():
                 # Update sidebar with stats
                 display_sidebar_stats(usage_df, results, territory, heating_type)
                 
-                # Display usage analysis
-                filtered_df = display_usage_analysis(usage_df)
-                
-                # Display comparison for selected provider
-                display_rate_comparison(results, usage_df)
-                
+                # Conditional displays based on view settings -------------------
+                if show_usage:
+                    display_usage_analysis(usage_df)
 
-                
-                # Display monthly analysis
-                display_monthly_analysis(usage_df, calculator, territory, heating_type)
+                if show_rate:
+                    display_rate_comparison(results, usage_df)
+
+                if show_provider_comp:
+                    display_provider_comparison(provider_results_all, usage_df)
+
+                if show_monthly:
+                    display_monthly_analysis(usage_df, calculator, territory, heating_type)
                 
             else:
                 st.error("❌ No usage data found in the uploaded file. Please check the file format.")

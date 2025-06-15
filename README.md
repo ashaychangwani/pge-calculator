@@ -78,7 +78,7 @@ A comprehensive web application to help you find the best PG&E electricity rate 
 
 ### Step 2: Upload Your Usage Data
 1. Visit [PG&E My Account](https://myaccount.pge.com/)
-2. Navigate to "Usage & Consumption"
+2. Navigate to [Check Your Energy Usage](https://myaccount.pge.com/myaccount/s/usageandconsumption-homepage)
 3. Download your usage data in CSV format
 4. Upload the file to the calculator
 
